@@ -1,0 +1,126 @@
+/*display*/
+.d-f {
+    display: flex;
+}
+.fd-column {
+    flex-direction: column;
+}
+
+/*justify-content*/
+.jc-start {
+    justify-content: flex-start;
+}
+.jc-end {
+    justify-content: flex-end;
+}
+.jc-center {
+    justify-content: center;
+}
+.jc-between {
+    justify-content: space-between;
+}
+.jc-around {
+    justify-content: space-around;
+}
+.jc-initial {
+    justify-content: initial;
+}
+
+/*align-items*/
+.ai-start {
+    align-items: flex-start;
+}
+.ai-end {
+    align-items: flex-end;
+}
+.ai-center {
+    align-items: center;
+}
+.ai-stretch {
+    align-items: stretch;
+}
+.ai-baseline {
+    align-items: baseline;
+}
+.ai-initial {
+    align-items: initial;
+}
+
+/*align-content*/
+.ac-start {
+    align-content: flex-start;
+}
+.ac-end {
+    align-content: flex-end;
+}
+.ac-center {
+    align-content: center;
+}
+.ac-between {
+    align-content: space-between;
+}
+.ac-around {
+    align-content: space-around;
+}
+.ac-stretch {
+    align-content: stretch;
+}
+.ac-initial {
+    align-content: initial;
+}
+/* width */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* add */
+th {
+    text-align: start;
+    font-weight: normal;
+}
+th, td {
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.box {
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.box1 {
+    background-color: red;
+    width: 60%;
+}
+.box2 {
+    background-color: blue;
+    width: 90%;
+}
+.box3 {
+    background-color: #008000;
+    width: 50%;
+}
+.box4 {
+    background-color: #808080;
+    width: 80%;
+}
+.box5 {
+    background-color: #808000;
+    width: 75%;
+}
