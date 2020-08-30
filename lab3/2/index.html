@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="1.jpg" type="image/icon type">
   <title>2</title>
 </head>
 <body>
@@ -10,37 +11,38 @@
     <h2>Register</h2>
     <form action="">
       <div class="form-group">
-        <input type="text" class="form-control" id="หมายเลขบัตรประชาชน" placeholder="หมายเลขบัตรประชาชน" required>
-        <button onclick="checkCardNo()">Check</button>
+        <input type="text" action="/action_page.php" class="form-control" id="cardId" placeholder="หมายเลขบัตรประชาชน" maxlength="13" required>
+        <button onclick="checkCardId()">Check</button>
+        <div id="checkCardId" ></div>
       </div>
       <div class="form-group">
-        <select name="" id="">
-          <option value="" selected>--------- กรุณาเลือกคำนำหน้าชื่อ ---------</option>
-          <option value="">นาย</option>
-          <option value="">นาง</option>
-          <option value="">นางสาว</option>
-          <option value="">เด็กชาย</option>
-          <option value="">เด็กหญิง</option>
+        <select name="" id="title" required>
+          <option value="000" selected>--------- กรุณาเลือกคำนำหน้าชื่อ ---------</option>
+          <option value="นาย">นาย</option>
+          <option value="นาง">นาง</option>
+          <option value="นางสาว">นางสาว</option>
+          <option value="เด็กชาย">เด็กชาย</option>
+          <option value="เด็กหญิง">เด็กหญิง</option>
         </select>
       </div>
       <div class="form-group">
-        <input type="text"  class="form-control" id="ชื่อ" placeholder="ชื่อ">
+        <input type="text"  class="form-control" id="fName" placeholder="ชื่อ" minlength="2" maxlength="20">
       </div>
       <div class="form-group">
-        <input type="text"  class="form-control" id="นามสกุล" placeholder="นามสกุล">
+        <input type="text"  class="form-control" id="lName" placeholder="นามสกุล" minlength="2" maxlength="30">
       </div>
       <div class="form-group">
-        <textarea name="" id="" cols="20" rows="2"></textarea>
+        <textarea name="" id="address" cols="20" rows="2"></textarea>
       </div>
       <div class="form-group">
-        <input type="text"  class="form-control" id="ตำบล/แขวง" placeholder="ตำบล/แขวง">
+        <input type="text"  class="form-control" id="subDistrict" placeholder="ตำบล/แขวง">
       </div>
       <div class="form-group">
-        <input type="text"  class="form-control" id="อำเภอ/เขต" placeholder="อำเภอ/เขต">
+        <input type="text"  class="form-control" id="district" placeholder="อำเภอ/เขต">
       </div>
       <div class="form-group">
-        <select name="province">
-          <option value="" selected>--------- เลือกจังหวัด ---------</option>
+        <select id="province">
+          <option value="000" selected>--------- เลือกจังหวัด ---------</option>
           <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
           <option value="กระบี่">กระบี่ </option>
           <option value="กาญจนบุรี">กาญจนบุรี </option>
@@ -123,10 +125,10 @@
       </div>
       
       <div class="form-group">
-        <input type="text"  class="form-control" id="รหัสไปรษณีย์" placeholder="รหัสไปรษณีย์">
+        <input type="text"  class="form-control" id="postalCode" placeholder="รหัสไปรษณีย์">
       </div>
       <div class="form-group">
-        <input type="text"  class="form-control" id="เบอร์โทรศัพท์" placeholder="เบอร์โทรศัพท์">
+        <input type="text"  class="form-control" id="phoneNo" placeholder="เบอร์โทรศัพท์">
       </div>
       <button type="submit" id="submit" class="btn btn-default">Submit</button>
     </form>
