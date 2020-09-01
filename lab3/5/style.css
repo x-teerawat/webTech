@@ -1,0 +1,38 @@
+.chartbar {
+    list-style: none;
+    padding-top: 20px;
+    width:560px;
+}
+ul.chartbar li {
+    height: 35px;
+    color: #6699AA;
+    text-align: left;
+    font-size: 14px;
+    line-height: 35px;
+    padding: 0px 20px;
+    margin-bottom: 5px;
+}
+ul.chartbar li.mm {
+    background: #B3B3D9;
+    width:100%;
+}
+
+ul.chartbar li.tt {
+    background: #FFBE7D;
+    width:100%;
+}
+
+ul.chartbar li.ee {
+    background: #E1FD8E;
+    width:100%;
+}
+
+ul.chartbar li.ss {
+    background: #CBAB8D;
+    width:100%;
+}
+
+ul.chartbar li.so {
+    background: #F2ED8C;
+    width:100%;
+}
