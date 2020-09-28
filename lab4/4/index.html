@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="count">
+        <button class="btn btn-danger" onclick="clicked()">submit</button>
+        <div id="ran"></div>
+    </div>
+
+    <script>
+        var cnum = 0;
+        function clicked() {
+            var counts = parseInt(document.getElementById("count").value);
+            for (let i = 1; i < counts + 1; i++) {
+                cnum += 1;
+                console.log(counts);
+                var mmain = document.getElementById("ran");
+                var crbox = document.createElement("div");
+                crbox.setAttribute("class", "inbox")
+                mmain.appendChild(crbox);
+                if (cnum % 8 == 0) {
+                    let newln = document.createElement("br")
+                    mmain.appendChild(newln);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

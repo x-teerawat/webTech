@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+*, body, h1, h2, h3, h4, h5, h6, p, ul {
+    padding: 0;
+    margin: 0;
+    font-family: 'Long Cang', cursive;
+    text-decoration: none !important;
+    overflow-x: none;
+}
+ul {
+    list-style-type: none;
+}
+header {
+    height: 10vh;
+    background: #D6D6D6;
+    position: relative;
+}
+header h1 {
+    font-size: 50px;
+    color: #B29DB6;
+}
+header h1:hover {
+    color: #B29DB6;
+    transform: scale(1.25);
+}
+header a {
+    color: #B3A580;
+}
+header a:hover {
+    color: #A29574 !important;
+}
+header li:hover {
+    transform: scale(1.25);
+}
+section {
+    /* height: 100vh; */
+}
+section h1 {
+    color: #99B49F;
+}
+section h5 {
+    color: #F1C470;
+}
+section a {
+    color: #FF6961;
+}
+section button:hover {
+    transform: scale(1.15);
+    color: #C23B23;
+}
+section button a:hover {
+    color: #C23B23;
+}
+.pic {
+    width: 300px;
+    height: 300px;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+.css {
+    background-color: #DFD8DC;
+}
+.css ul {
+    padding: 30px;
+    background-color: #fff;
+}
+footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #FEC8D8;
+    bottom: 0;
+}

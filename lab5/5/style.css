@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+.container-fluid {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #191919;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.bypage{
+    margin: 5em;
+}
+
+.playlist-song{
+    color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 1em;
+    animation-name: toy;
+    animation-duration: 5s;
+    display: inline-block;
+    width: 200px;
+}
+
+@keyframes toy {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

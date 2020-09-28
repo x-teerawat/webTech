@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>3</title>
+</head>
+<body>
+  <div class="container">
+    <a style="font-size: 34px;">ลงทะเบียนร่วมงาน</a>
+    <div class="row py-5">
+      <div class="col">
+        <input class="form-control" type="text" id="stdID" placeholder="รหัสนักศึกษา"></p>
+      </div>
+      <div class="col">
+        <input class="form-control" type="text" id="fName" placeholder="ชื่อ"></p>
+      </div>
+      <div class="col">
+        <input class="form-control" type="text" id="lName" placeholder="นามสกุล"></p>
+      </div>
+      <button type="button" class="btn btn-primary col" onclick="reg()">ลงทะเบียน</button>
+    </div>
+    
+    <div>
+      <table id="table" class="table">
+        <thead>
+          <tr>
+            <th scope="col">ลำดับที่</th>
+            <th scope="col">รหัสนักศึกษา</th>
+            <th scope="col">ชื่อ</th>
+            <th scope="col">นามสกุล</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  
+  <script>
+    function reg() {
+      let stdID = document.getElementById("stdID").value;
+      let fName = document.getElementById("fName").value;
+      let lName = document.getElementById("lName").value;
+      let table = document.getElementById("table");
+      let row = table.insertRow(-1);
+      
+      var cell0 = row.insertCell(0);
+      var cell1 = row.insertCell(1);
+      var cell2 = row.insertCell(2);
+      var cell3 = row.insertCell(3);
+      cell0.innerHTML = row.rowIndex;
+      cell1.innerHTML = stdID;
+      cell2.innerHTML = fName;
+      cell3.innerHTML = lName;
+    }
+  </script>
+</body>
+</html>

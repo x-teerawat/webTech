@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Test</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Check a number or not a number</h1>
-    <input type="text" id="input">
-    <button onclick="checkNaN()">Check NaN</button>
-    <div id="show"></div>
-    <br><br><br>
-    <!-- <h1>Check symbols</h1>
-    <input type="text" id="input">
-    <button onclick="checkSymbols()">Check Symbols</button> -->
-    <script src="app.js"></script> 
+    <table id="table0">
+        <tr>
+            <th>Header 0</th>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+    </table>
+
+    <script>        
+        let table = document.getElementById('table0');
+        let row = table.insertRow(-1); 
+        //Row position 0,1,2,...,n  -1 = last
+        let cell, text, tnode;
+            
+        for (let i = 0; i < 3; i++) {
+            cell = row.insertCell(-1);
+            text = 'Row ' + row.rowIndex + ', Column ' + i;
+            tnode = document.createTextNode(text);
+            cell.appendChild(tnode);
+        }    
+    </script> 
 </body>
 </html>

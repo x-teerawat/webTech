@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="headphone-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="app.js" type="text/javascript"></script>
+    <title>5</title>
+</head>
+
+<body style="font-family: 'Prompt', sans-serif;">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2> <i class='fas fa-headphones'></i> Teerawat</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div id="show"></div>
+                        <div>
+                            <p>Click <i class="fas fa-plus"></i> add to your playlist</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="card w-75">
+                                <div class="row no-glutters">
+                                    <div class="col-md-3">
+                                        <img src="1.jpg" class="card-img">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <h4 id="song_1">ABC</h4>
+                                            <strong>
+                                                <p class="text-dark mb-1" id="artist_1"> <i>BCA</i> </p>
+                                            </strong>
+                                            <p class="text-muted mb-2"> <i>ABC • 123</i> </p>
+                                            <button onclick="selected(0)" class="btn btn-sm btn-light border border-dark"><i
+                                                class="fas fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="card w-75">
+                                    <div class="row no-glutters">
+                                        <div class="col-md-3">
+                                            <img src="2.jpg" class="card-img">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 id="song_2">ABC</h4>
+                                                <strong>
+                                                    <p class="text-dark mb-1" id="artist_2"> <i>BCA</i> </p>
+                                                </strong>
+                                                <p class="text-muted mb-2"> <i>ABC • 123</i> </p>
+                                                <button onclick="selected(1)" class="btn btn-sm btn-light border border-dark"><i
+                                                    class="fas fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="card w-75">
+                                        <div class="row no-glutters">
+                                            <div class="col-md-3">
+                                                <img src="3.jpg" class="card-img">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h4 id="song_3">ABC</h4>
+                                                    <strong>
+                                                        <p class="text-dark mb-1" id="artist_3"> <i>BCA</i> </p>
+                                                    </strong>
+                                                    <p class="text-muted mb-2"> <i>ABC • 123</i> </p>
+                                                    <button onclick="selected(2)" class="btn btn-sm btn-light border border-dark"><i
+                                                        class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
